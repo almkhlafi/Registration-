@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ShowInfo">
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="25dp"
+        android:text="Registaration and login Information"
+        android:textColor="#3949AB"
+        android:textSize="24sp"
+        android:textStyle="bold|italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/fullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"        android:text="Name and Surename :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginBottom="20dp"
+        android:text="Email :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="123dp" />
+
+    <TextView
+        android:id="@+id/pwd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginStart="16dp"
+        android:text="Password :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="189dp" />
+
+    <TextView
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="28dp"
+        android:layout_marginStart="16dp"
+        android:text="Gender :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="241dp" />
+
+    <TextView
+        android:id="@+id/Hobbies"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="Hobbies :"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="296dp" />
+
+
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="456dp" />
+
+    <androidx.constraintlayout.widget.Group
+        android:layout_width="3dp"
+        android:layout_height="3dp"
+        tools:layout_editor_absoluteX="211dp"
+        tools:layout_editor_absoluteY="511dp" />
+</LinearLayout>

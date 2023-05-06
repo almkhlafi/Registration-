@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    tools:context=".Registrarion">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="298dp"
+        android:text="Register"
+        android:textColor="#E43535"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/Tname"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="58dp"
+        android:ems="10"
+        android:hint="Name Surename"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+    <EditText
+        android:id="@+id/TEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginEnd="58dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <EditText
+        android:id="@+id/Tcpwd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tpwd" />
+
+    <EditText
+        android:id="@+id/Tpwd"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="58dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/TEmail" />
+
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="7dp"
+        android:text="Gender"
+        android:textColor="#2E2828"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/Male"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Tcpwd" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="89dp"
+        tools:layout_editor_absoluteY="386dp" />
+
+
+    <RadioButton
+        android:id="@+id/Female"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="70dp"
+        android:text="Female"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/Male"
+        app:layout_constraintTop_toBottomOf="@+id/Tcpwd" />
+
+    <RadioButton
+        android:id="@+id/Male"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="84dp"
+        android:text="Male"
+        app:layout_constraintStart_toEndOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/Tcpwd" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="310dp"
+        android:text="Hobbies"
+        android:textColor="#302B2B"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Male" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="409dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5">
+
+        <CheckBox
+            android:id="@+id/Driving"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="4dp"
+            android:text="Driving" />
+
+        <CheckBox
+            android:id="@+id/Swimming"
+            android:layout_width="98dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Swimming" />
+
+        <CheckBox
+            android:id="@+id/Gym"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Gym" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="409dp"
+        android:layout_height="190dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <CheckBox
+            android:id="@+id/Coding"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="4dp"
+            android:text="Coding" />
+
+        <CheckBox
+            android:id="@+id/VideoGames"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Video Games" />
+
+
+        <CheckBox
+            android:id="@+id/Boxing"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:text="Boxing" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3m"
+        android:layout_width="409dp"
+        android:layout_height="190dp"
+        android:layout_margin="30dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.205"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/bConfirm"
+            android:layout_width="156dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#43A047"
+            android:text="Confirm"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/bClear"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/Driving" />
+
+        <Button
+            android:id="@+id/bClear"
+            android:layout_width="156dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#CD6868"
+            android:text="Clear"
+            app:layout_constraintTop_toBottomOf="@+id/Swimming"
+            tools:layout_editor_absoluteX="220dp" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

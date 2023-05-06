@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/LOGIN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textColor="#3949AB"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="120dp"
+        android:layout_marginStart="15sp"
+        android:layout_marginTop="150dp"
+        />
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="70dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="142dp"/>
+
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Password"
+        android:layout_marginTop="20dp"
+        android:inputType="textPassword"
+        android:layout_marginStart="25dp"
+        tools:layout_editor_absoluteX="51dp"
+        tools:layout_editor_absoluteY="220dp" />
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bLogin"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#43A047"
+            android:text="Login"
+            android:layout_marginStart="45dp"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="300dp" />
+        <Button
+            android:id="@+id/bClear"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#CD6868"
+            android:text="Clear"
+            android:layout_marginStart="25dp"
+            tools:layout_editor_absoluteX="228dp"
+            tools:layout_editor_absoluteY="300dp" />
+
+    </LinearLayout>
+</LinearLayout>
